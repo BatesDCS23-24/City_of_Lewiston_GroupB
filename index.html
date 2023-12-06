@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffffbf;
+            /* Added background color to the body */
+            position: relative; /* Set body to relative positioning */
+        }
+
+        /* Container for the first logo image */
+        #logo1 {
+            position: absolute;
+            top: 90px; /* Adjust the top position */
+            right: 60px; /* Adjust the right position */
+            
+        }
+
+        /* Container for the second logo image */
+        #logo2 {
+            position: absolute;
+            top: 210px; /* Adjust the top position */
+            right: 60px; /* Adjust the right position */
+        }
+        /* Resize the images */
+        #logo1 img,
+        #logo2 img {
+            max-width: 100px; /* Adjust the maximum width */
+            height: auto;
+
+        }
+    </style>
+</head>
+<body >
+
+    <!-- City of Lew and Bates Logos  -->
+    <div id="logo1">
+        <img src="cityoflew.gif" alt="Logo 1">
+    </div>
+    <div id="logo2">
+        <img src="bates.png" alt="Logo 2">
+    </div>
+
+
+    <!-- Header -->
+    <div style="text-align: center; margin-bottom: 30px; background-color:#8e8e8e6f; margin-top: 30px;">
+        <h1 style="font-size: 24px; margin: 0;">City of Lewiston Group B Project</h1>
+        <p style="font-size: 18px; margin: 0;">MATH 355 - Community-Engaged Data Science</p>
+        <p style="font-size: 16px; margin: 0;">Lewiston Recreation Activity Report</p>
+        <p style="font-size: 12px; margin: 0;">Carlos Gonzalez, Jamil Mouehla, Katie Kortekass, Quin Macauley</p>
+    </div>
+
+    <!-- Introducing the Block Group Map  -->
+    <div style="text-align: center; margin-bottom: 40px;"> 
+        <iframe src="Kennedy Pool/census_blockgroup_map.html" width="800" height="600"></iframe>
+        <p style="font-size: 16px; margin: 0;">Map 1: Block Group Map </p>
+    </div>
+
+    <!-- Introducing the Census Tract Map  -->
+    <div style="text-align: center; margin-bottom: 40px;"> 
+        <iframe src="Kennedy Pool/census_tract_map.html" width="800" height="600"></iframe>
+        <p style="font-size: 16px; margin: 0;">Map 2: Census Tract Map including Demographic Information</p>
+    </div>
+
+    <!-- Grade Graphs -->
+    <div style="display: flex; justify-content: space-between;">
+        <div style="flex: 1; margin-left: 40px;">
+            <p style="font-size: 20px; margin: 10px 0;">Grade Visit Distribution</p>
+            <iframe src="Kennedy Pool/accessible_grade_visits.html" width="600" height="600"></iframe>
+        </div>
+    <!-- Gender Graphs -->
+        <div style="flex: 1; margin-left: 10px; margin-bottom: 40px;">
+            <p style="font-size: 20px; margin: 10px 0;">Gender Visit Distribution</p>
+            <iframe src="Kennedy Pool/gender_visits.html" width="600" height="600"></iframe>
+        </div>
+    </div>
+
+    <!-- Data Guide for Future Implementation  -->
+    <div style="text-align: center; margin-bottom: 20px; margin-left: 70px; margin-right: 70px;">
+        <h1 style="font-size: 24px; margin: 0; background-color:#8e8e8e6f; margin-top: 30px; margin-bottom: 20px;
+        ">Future Data Collection Implementation Guide</h1>
+
+        <p style="text-align: justify; font-size: 16px; margin: 0;">
+        
+            <b>Premise</b>: In our project, we were able to use data on the Kennedy Park Pool provided to us by the 
+            City of Lewiston to generate a very informative map that contained the information of the residences of 
+            the users of the pool. It is hoped that this map will provide the city government and the recreation department 
+            with insights into the users of the pool. By this notion, it is presumed that similar maps could be made for 
+            every program that the recreation department is in charge of; the analysis of the maps could be used to entice 
+            different populations, based on their location throughout Lewiston, into their programs through targeted advertising 
+            purposes. Thus, a program was devised so that data, of a similar style as the data provided to us about the users of 
+            the Kennedy Park Pool, could be uploaded so that a map of the users for a specific program would be created. The original
+            students working on this project, Carlos, Katie, Quinn, and Jamil, may no longer be available to run this program for their 
+            community partners in Lewiston City Hall, so this program as a product of this project manifests an ideal of sustainability 
+            common in a design justice setting. Throughout this data guide, it is hoped that the necessary information for said 
+            program is highlighted and explained, not only for the partners working for the City but any future collaborators. <br><br>
+
+            <b>Data Format</b>: The program created requires files of a ".xlxs" format, which is common in Excel Spreadsheets and Google Sheets. <br><br>
+
+            <b>Column Headings</b>: A screenshot is placed below, taken from the data of the Kennedy Park Pool so that it is clear to the format of the 
+            data necessary for the program. Each column name should have the first letter capitalized and be written as follows: Program Name, 
+            Event Name, Activity Name, Grade, Gender, Address, Address 2, City, State, and Zip Code.<br><br>
+
+            <b>Program Name</b>: To keep track of program attendance, input the name of the recreational program. For example, in the Kennedy Park 
+            Pool data, the Program Name was "Kennedy Park Pool Membership." In the mock data set we created for the Basketball league at 
+            the Armory, we imputed the Program Name as "Armory Basketball."<br><br>
+
+            <b>Event Name</b>: This column is dedicated to programs that have a specific event name. For example, adding to our mock data about 
+            recreational basketball, since there are different age groups, the age group of the league can be added to this column to keep 
+            track of the participants for each specific program.<br><br>
+
+            <b>Activity Name</b>: This column is used for organization as the activity name is assumed to be the same as the Program Name. In the 
+            Kennedy Park Pool Data, both the Program Name and Activity Name was "Kennedy Park Pool Membership."<br><br>
+
+            <b>Grade</b> : This column contains the grade of the participant to keep track of the number of participants in each grade to get a 
+            better understanding of what ages the programs better reached. For the data to work with the code, the grade should be inputted 
+            as a number for grades 1-12, PK of pre-kindergarten, and K for kindergarten.<br><br>
+
+
+        
+        </p>
+    </div>
+
+</body>
+</html>
