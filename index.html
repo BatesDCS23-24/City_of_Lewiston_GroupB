@@ -22,6 +22,8 @@
             top: 210px; /* Adjust the top position */
             right: 60px; /* Adjust the right position */
         }
+
+
         /* Resize the images */
         #logo1 img,
         #logo2 img {
@@ -57,17 +59,27 @@
         ">Project Background</h1>
             <p style="text-align: justify; font-size: 16px; margin: 0;">    
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                 sunt in culpa qui officia deserunt mollit anim id est laborum.
-    
+                During this semester, our group worked on developing a tool that would give insights into the attendance and reach of the Kennedy Pool programs. 
+                With basic data collected, we were able to develop a Python program that would make use of API in order to get geospatial data based on the 
+                addressess provided for pool registration. With this data we were able to generate interactive maps and diagrams in order to show what areas 
+                and groups were being reached by the Kennedy Pool. <br><br>
+
+                At the later stages of the course, we focused on expanding the program, in order to be able to process data from other activities or clubs that 
+                might be run by the City of Lewiston. In addition we developed a Data Acquisition and Formatting Guide, to serve as reference on how data Acquisition
+                on event registration or attendance could be implemented without sophisticated equipment. <br><br>
+
+                The overaching goal of this proyect, and the guide for future work on this program is the development of a tool that serves the City of Lewiston
+                take informed decision about the inlcusive and equitable reach of their community activities. 
             </p>
 
     </div>
 
 
     <!-- Introducing the Block Group Map  -->
+    <div style="text-align: center; margin-bottom: 20px; margin-left: 70px; margin-right: 70px;">
+    <h1 style="font-size: 24px; margin: 0; background-color:#8e8e8e6f; margin-top: 30px; margin-bottom: 20px;
+        ">An Analysis of Kennedy Pool Registration</h1> </div>
+
     <div style="text-align: center; margin-bottom: 40px;"> 
         <iframe src="Kennedy Pool/census_blockgroup_map.html" width="800" height="600"></iframe>
         <p style="font-size: 16px; margin: 0;">Map 1: Block Group Map </p>
@@ -82,12 +94,10 @@
     <!-- Grade Graphs -->
     <div style="display: flex; justify-content: space-between;">
         <div style="flex: 1; margin-left: 40px;">
-            <p style="font-size: 20px; margin: 10px 0;">Grade Visit Distribution</p>
             <iframe src="Kennedy Pool/accessible_grade_visits.html" width="600" height="600"></iframe>
         </div>
     <!-- Gender Graphs -->
         <div style="flex: 1; margin-left: 10px; margin-bottom: 40px;">
-            <p style="font-size: 20px; margin: 10px 0;">Gender Visit Distribution</p>
             <iframe src="Kennedy Pool/gender_visits.html" width="600" height="600"></iframe>
         </div>
     </div>
@@ -95,8 +105,6 @@
 
     <!-- Kennedy Pool Data Analysis  -->
     <div style="text-align: center; margin-bottom: 20px; margin-left: 70px; margin-right: 70px;">
-        <h1 style="font-size: 24px; margin: 0; background-color:#8e8e8e6f; margin-top: 30px; margin-bottom: 20px;
-        ">An Analysis of Kennedy Pool Registration</h1>
 
         <p style="text-align: justify; font-size: 16px; margin: 0;">
         
@@ -108,9 +116,9 @@
 
             Upon further analysis, another noteworthy insight emerges: the tracts with a greater number of pool visitors also exhibit a higher level of 
             poverty and a heightened dropout rate. Interestingly, this trend may be attributed to the population density in a specific neighborhood rather
-             than implying a direct correlation. Additionally, it is essential to consider external factors that may contribute to these patterns, such as 
-             regional economic conditions and educational resources. Furthermore, future investigations could delve into the potential impact of community 
-             programs or interventions on mitigating these challenges in high-poverty areas.
+            than implying a direct correlation. Additionally, it is essential to consider external factors that may contribute to these patterns, such as 
+            regional economic conditions and educational resources. Furthermore, future investigations could delve into the potential impact of community 
+            programs or interventions on mitigating these challenges in high-poverty areas.
 
         </p>
     </div>
@@ -119,28 +127,36 @@
     <!-- Data Guide for Future Implementation  -->
     <div style="text-align: center; margin-bottom: 20px; margin-left: 70px; margin-right: 70px;">
         <h1 style="font-size: 24px; margin: 0; background-color:#8e8e8e6f; margin-top: 30px; margin-bottom: 20px;
-        ">Future Data Collection Implementation Guide</h1>
+        ">Data Guide - Future Data Collection Implementation Procedures</h1>
 
         <p style="text-align: justify; font-size: 16px; margin: 0;">
         
-            <b>Premise</b>: In our project, we were able to use data on the Kennedy Park Pool provided to us by the 
-            City of Lewiston to generate a very informative map that contained the information of the residences of 
-            the users of the pool. It is hoped that this map will provide the city government and the recreation department 
-            with insights into the users of the pool. By this notion, it is presumed that similar maps could be made for 
-            every program that the recreation department is in charge of; the analysis of the maps could be used to entice 
-            different populations, based on their location throughout Lewiston, into their programs through targeted advertising 
-            purposes. Thus, a program was devised so that data, of a similar style as the data provided to us about the users of 
-            the Kennedy Park Pool, could be uploaded so that a map of the users for a specific program would be created. The original
-            students working on this project, Carlos, Katie, Quinn, and Jamil, may no longer be available to run this program for their 
-            community partners in Lewiston City Hall, so this program as a product of this project manifests an ideal of sustainability 
-            common in a design justice setting. Throughout this data guide, it is hoped that the necessary information for said 
-            program is highlighted and explained, not only for the partners working for the City but any future collaborators. <br><br>
+            <b>Premise</b>: In our project, we were able to use data on the Kennedy Park Pool provided to us by the City of Lewiston to generate 
+            a very informative map that contained the information of the residences of the users of the pool. It is hoped that this map will provide 
+            the city government and the recreation department with insights into the users of the pool. By this notion, it is presumed that similar 
+            maps could be made for every program that the recreation department is in charge of; the analysis of the maps could be used to entice 
+            different populations, based on their location throughout Lewiston, into their programs through targeted advertising purposes. Thus, a
+             program was devised so that data, of a similar style as the data provided to us about the users of the Kennedy Park Pool, could be 
+             uploaded so that a map of the users for a specific program would be created. The original students working on this project, Carlos, 
+             Katie, Quinn, and Jamil, may no longer be available to run this program for their community partners in Lewiston City Hall, so this 
+             program as a product of this project manifests an ideal of sustainability common in a design justice setting. Throughout this data guide,
+             it is hoped that the necessary information for said program is highlighted and explained, not only for the partners working for the City 
+             but any future collaborators. 
+            <br><br>
 
             <b>Data Format</b>: The program created requires files of a ".xlxs" format, which is common in Excel Spreadsheets and Google Sheets. <br><br>
 
             <b>Column Headings</b>: A screenshot is placed below, taken from the data of the Kennedy Park Pool so that it is clear to the format of the 
             data necessary for the program. Each column name should have the first letter capitalized and be written as follows: Program Name, 
             Event Name, Activity Name, Grade, Gender, Address, Address 2, City, State, and Zip Code.<br><br>
+        </p>
+
+            <!-- Adding pciture which took too long -->
+            <p align="center">
+            <iframe  src="headings.png" width="1075" height="60">
+            </iframe></p><br><br>
+
+        <p style="text-align: justify; font-size: 16px; margin: 0;">
 
             <b>Program Name</b>: To keep track of program attendance, input the name of the recreational program. For example, in the Kennedy Park 
             Pool data, the Program Name was "Kennedy Park Pool Membership." In the mock data set we created for the Basketball league at 
@@ -169,14 +185,31 @@
             For example, "ME" would be used if the participants lived in Maine. <br><br>
 
             <b>Zip Code</b>: This column should contain the zip code where the participants live. <br><br>
-
-
-
-        
         </p>
     </div>
 
-    
+    <!-- Mock Data Map Examples -->
+    <div style="text-align: center; margin-bottom: 20px; margin-left: 70px; margin-right: 70px;">
+        <h1 style="font-size: 24px; margin: 0; background-color:#8e8e8e6f; margin-top: 30px; margin-bottom: 20px;
+         ">Mock Data Map Examples</h1>
+        
+        <p style="text-align: justify; font-size: 16px; margin: 0;">
+            As part of the extension of this project to be able to generate activity reports for this other of the city's clubs and activities, the code was modified in 
+            order to intake data from other activities. As an example the program used mock data for a City of Lewiston Basketball and Chess club, to serve as a proof
+            of concept of how other activities could be incorporated in the future. This would help future work on the project, as the program is now able to intake data 
+            from other activities. 
+        </p>
+    </div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+        <div style="flex: 1; margin-left: 150px;">
+            <img src="basketball_mock.png" alt="Basketball Mock Data Map" style="width:400px;height:300px;">
+        </div>
+        <div style="flex: 1; margin-left: 0px; margin-bottom: 0px;">
+            <img src="chess_mock.png" alt="Basketball Mock Data Map" style="width:400px;height:300px;">
+        </div>
+    </div>
+
+
 
 </body>
 </html>
