@@ -10,6 +10,8 @@ programs. With basic data collected, we were able to develop a Python program th
 based on the addressess provided for pool registration. With this data we were able to generate interactive maps and diagrams in order to 
 show what areas and groups were being reached by the Kennedy Pool.
 
+This repository includes the finalized maps and graphs, the demographic data utilized, the necessary shapefiles, in addition to mock maps to demosntrate that the code is able to generate activity reports for other activities. 
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
