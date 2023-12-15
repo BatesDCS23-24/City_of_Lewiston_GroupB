@@ -34,7 +34,26 @@ show what areas and groups were being reached by the Kennedy Pool.
 
 
 ## Usage
-The Jupyter Notebook is orga
+The Jupyter Notebook is organized by functions that carry out the required tasks in order to ouput the following: 
+    - directory "event_name" which contains: census_tract_map, census_blockgroup_map, gender_visits.html, grade_visits.html
+
+The function below was constructed in order to call all other functions and generate the report. 
+
+### activityReport(event_name, event_file, user_agent, census_shapefile_path, demographic_data_path, census_blockg_shapefile_path):
+    Function that runs alls the functions above, and generates complete activity report 
+
+    Parameters:
+        - event_name (str): name of the event for which the activity report is being done
+        - event_file (str): Excel activity file path
+        - user_agent (str): User agent for geocoding service .
+        - census_shapefile_path (str): Path to the census BLOCK GROUP shapefile.
+        - demographic_data_path (str): Specific demographic data filepath , available in GitHub
+        - census_blockg_shapefile_path (str): Path to the census BLOCK GROUP shapefile.
+
+    Returns:
+        - directory "event_name" which contains: census_tract_map, census_blockgroup_map, gender_visits.html, grade_visits.html
+
+The rest of function, a description of their parameters and their returns are detailed below. 
 
 ## Functions
 ### `clean_data(event_file)`
@@ -75,15 +94,21 @@ The Jupyter Notebook is orga
   - Tuple containing graphs for gender and grade (`go.Figure`).
 
 ## Maps
-Explain the purpose and usage of the map-generating functions. Provide examples of input data and expected output.
+Two maps are returned from this project: 
+- census_tract_map: An interactive Folium map that incorporates the demographic data detailed in earlier sections. Utilizes Maine Census Tract shapefile boundaries.
+      - Further work can be done with this visualization. The Social Explorer demographic data and Shapefile GEOID are not the same versions so they are mismatched for many boundaries. Missing data in those areas is labeled as -99
+- census_blockgroup_map: An interactive Folium map that utilizes Maine Census Block Group shapefile boundaries and details the number of visitors/registrations per 1000 residents. 
 
 ## Graphs
-Explain the purpose and usage of the graph-generating function. Provide examples of input data and expected output.
+- gender_visits.html: Interactive Plotly pie chart that shows the distribution of the gender of visitors/participants. For missing Gender observations the observation was assigned a value of "Gender Not Disclosed"
+- grade_visits.html: Interactive Plotly bar chart that shows the distribution of the grade of visitors/participants. For missing Gender observations the observation was assigned a value of "No Grade"
 
 ## Contributing
-Explain how others can contribute to your project.
+This project should serve as a blueprint on how demographic data and geospatial data can be used in a community engagement setting. I urge students
+in future iterations of MATH 316 to continue the development and expansion of the project. 
 
-## License
-Specify the license for your project (if any).
+###### READ.ME File by Carlos Gonzalez - For inquiries contact @cgonzala
+
+
 
 ---
