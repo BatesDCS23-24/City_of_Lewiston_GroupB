@@ -87,5 +87,3 @@ Explain how others can contribute to your project.
 Specify the license for your project (if any).
 
 ---
-
-Feel free to adjust this template to better fit your project's specifics!
