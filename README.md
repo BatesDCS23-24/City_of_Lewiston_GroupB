@@ -20,6 +20,10 @@ show what areas and groups were being reached by the Kennedy Pool.
 
 
 ## Installation
+- The project is mainly centered on the code available on the **function.ipynb** notebook. For some unkown reasons GitHub is unable to properly render the file. Doownload
+  for propoer analysis of the code. 
+
+
 - The project requires two shapefiles/directories in the repo: maine_census_tracts and maine_block_groups.zip
     - These files were obtained from [census.gov](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)
  
@@ -34,7 +38,7 @@ show what areas and groups were being reached by the Kennedy Pool.
 
 
 ## Usage
-The Jupyter Notebook is organized by functions that carry out the required tasks in order to ouput the following: 
+The Jupyter Notebook "functions.ipynb" is organized by functions that carry out the required tasks in order to ouput the following: 
     - directory "event_name" which contains: census_tract_map, census_blockgroup_map, gender_visits.html, grade_visits.html
 
 The function below was constructed in order to call all other functions and generate the report. 
